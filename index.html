@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Chúc Mừng Sinh Nhật</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="petals-container" id="petals"></div>
+
+    <main class="container">
+        <header>
+            <h1>Happy Birthday!</h1>
+            <p class="subtitle">CHÚC MỪNG SINH NHẬT BẠN</p>
+        </header>
+
+        <section class="gift-area">
+            <div class="gift-scene" id="giftBoxTrigger">
+                <div class="gift-box" id="box">
+                    <div class="box-face face-front"></div>
+                    <div class="box-face face-back"></div>
+                    <div class="box-face face-right"></div>
+                    <div class="box-face face-left"></div>
+                    <div class="box-face face-top"></div>
+                    <div class="box-face face-bottom"></div>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; color: #666; font-style: italic; letter-spacing: 1px;">Chạm vào hộp quà để mở...
+            </p>
+        </section>
+    </main>
+
+    <div id="reveal-section">
+        <div class="book-card">
+            <div class="book-page left-page">
+                <div class="message" id="typing-text"></div>
+            </div>
+            <div class="book-page right-page">
+                <div class="image-frame">
+                    <img src="1.jpeg" alt="Birthday" id="reveal-image">
+                </div>
+            </div>
+        </div>
+        <div id="btn-group">
+            <button id="surpriseBtn">Bất ngờ nè</button>
+            <button id="closeBtn">Trở lại</button>
+        </div>
+    </div>
+
+    <div id="surprise-overlay">
+        <div class="surprise-content">
+            <span id="closeSurprise">&times;</span>
+            <img src="image4.jpeg" alt="Surprise Message" id="surprise-image">
+            <div class="surprise-text">Tặng bạn iu </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop autoplay preload="auto">
+        <source src="Happy Birthday To You.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
